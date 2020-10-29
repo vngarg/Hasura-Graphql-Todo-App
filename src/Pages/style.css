@@ -1,0 +1,45 @@
+.field {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 400px;
+}
+
+.btn {
+    border-radius: 20px;
+    color: black;
+    border: 1px solid #20b2aa;
+    outline: none;
+    background-color: lightseagreen;
+}
+
+.form {
+    margin: 20px;
+}
+
+.todo {
+    padding: 13px;
+    margin: 19px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.desc {
+    display: block;
+}
+
+.close1 {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .field {
+        width: 200px;
+    }
+    .close1 {
+        display: inline;
+    }
+    .close2 {
+        display: none;
+    }
+}
