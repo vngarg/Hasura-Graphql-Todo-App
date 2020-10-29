@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Hasura-Graphql-Todo-App/static/css/main.755d23fe.chunk.css",
+    "main.js": "/Hasura-Graphql-Todo-App/static/js/main.4d7046f2.chunk.js",
+    "main.js.map": "/Hasura-Graphql-Todo-App/static/js/main.4d7046f2.chunk.js.map",
+    "runtime-main.js": "/Hasura-Graphql-Todo-App/static/js/runtime-main.785bf269.js",
+    "runtime-main.js.map": "/Hasura-Graphql-Todo-App/static/js/runtime-main.785bf269.js.map",
+    "static/css/2.371065e2.chunk.css": "/Hasura-Graphql-Todo-App/static/css/2.371065e2.chunk.css",
+    "static/js/2.fa8aa409.chunk.js": "/Hasura-Graphql-Todo-App/static/js/2.fa8aa409.chunk.js",
+    "static/js/2.fa8aa409.chunk.js.map": "/Hasura-Graphql-Todo-App/static/js/2.fa8aa409.chunk.js.map",
+    "index.html": "/Hasura-Graphql-Todo-App/index.html",
+    "precache-manifest.709340ab3c77fae3f07805cdd952012c.js": "/Hasura-Graphql-Todo-App/precache-manifest.709340ab3c77fae3f07805cdd952012c.js",
+    "service-worker.js": "/Hasura-Graphql-Todo-App/service-worker.js",
+    "static/css/2.371065e2.chunk.css.map": "/Hasura-Graphql-Todo-App/static/css/2.371065e2.chunk.css.map",
+    "static/css/main.755d23fe.chunk.css.map": "/Hasura-Graphql-Todo-App/static/css/main.755d23fe.chunk.css.map",
+    "static/js/2.fa8aa409.chunk.js.LICENSE.txt": "/Hasura-Graphql-Todo-App/static/js/2.fa8aa409.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/Hasura-Graphql-Todo-App/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.785bf269.js",
+    "static/css/2.371065e2.chunk.css",
+    "static/js/2.fa8aa409.chunk.js",
+    "static/css/main.755d23fe.chunk.css",
+    "static/js/main.4d7046f2.chunk.js"
+  ]
+}
