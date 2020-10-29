@@ -1,2 +1,3 @@
-# Todo
-- [] Clear the fields after addition of a Todo.
+# Todo App
+
+https://vngarg.github.io/Hasura-Graphql-Todo-App/
