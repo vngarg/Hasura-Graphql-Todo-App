@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Hasura-Graphql-Todo-App/precache-manifest.709340ab3c77fae3f07805cdd952012c.js"
+  "/Hasura-Graphql-Todo-App/precache-manifest.3e730dc0a4466019b03de6c231bbe134.js"
 );
 
 self.addEventListener('message', (event) => {

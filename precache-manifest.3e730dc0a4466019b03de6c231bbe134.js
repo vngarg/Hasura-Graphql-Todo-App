@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ecb9249f14452c62c2d7dc8d89555e7",
+    "revision": "c5e89e446998f2d6be61897d3c4549a0",
     "url": "/Hasura-Graphql-Todo-App/index.html"
   },
   {
-    "revision": "608de1574f0f74cb0bb1",
-    "url": "/Hasura-Graphql-Todo-App/static/css/2.371065e2.chunk.css"
+    "revision": "876210b2440253045fe0",
+    "url": "/Hasura-Graphql-Todo-App/static/css/2.959f87e2.chunk.css"
   },
   {
-    "revision": "7bb3e85b8c4e2a265153",
-    "url": "/Hasura-Graphql-Todo-App/static/css/main.755d23fe.chunk.css"
+    "revision": "f4297cb0721b58dfd281",
+    "url": "/Hasura-Graphql-Todo-App/static/css/main.9b7c8eee.chunk.css"
   },
   {
-    "revision": "608de1574f0f74cb0bb1",
-    "url": "/Hasura-Graphql-Todo-App/static/js/2.fa8aa409.chunk.js"
+    "revision": "876210b2440253045fe0",
+    "url": "/Hasura-Graphql-Todo-App/static/js/2.7549e27e.chunk.js"
   },
   {
     "revision": "7a526f4dfa79ba43ded01cebbfe8fb7a",
-    "url": "/Hasura-Graphql-Todo-App/static/js/2.fa8aa409.chunk.js.LICENSE.txt"
+    "url": "/Hasura-Graphql-Todo-App/static/js/2.7549e27e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7bb3e85b8c4e2a265153",
-    "url": "/Hasura-Graphql-Todo-App/static/js/main.4d7046f2.chunk.js"
+    "revision": "f4297cb0721b58dfd281",
+    "url": "/Hasura-Graphql-Todo-App/static/js/main.ca951cf7.chunk.js"
   },
   {
     "revision": "eaf0c0e549ae7129dc91",
