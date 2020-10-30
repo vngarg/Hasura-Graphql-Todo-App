@@ -9,20 +9,25 @@ mutation toggleTodo($id: uuid!, $DoneStatus: String!) {
         Title
         date
         id
+        EndTime
+        StartTime
       }
     }
   }
 `
 
 export const ADD_TODOS = gql`
-mutation insert_Todo($Description: String!, $Title: String!) {
-    insert_Todo(objects: {Description: $Description, Title: $Title}) {
-      returning {
-        Description
-        Title
-        DoneStatus
-        date
-      }
+mutation insert_Todo($Description: String!, $Title: String!, $StartTime: timestamptz!, $EndTime:timestamptz!) {
+  insert_Todo(objects: {Description: $Description, Title: $Title, EndTime: $EndTime, StartTime: $StartTime}) {
+    returning {
+      Description
+      Title
+      DoneStatus
+      date
+      EndTime
+      StartTime
     }
   }
+}
+
 `

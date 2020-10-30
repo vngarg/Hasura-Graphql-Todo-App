@@ -21,7 +21,7 @@ const Example = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar />
           <NavbarText className='pr-5'>
-            <h4>Todo App</h4>
+            <h4>Task Scheduler</h4>
           </NavbarText>
         </Collapse>
       </Navbar>

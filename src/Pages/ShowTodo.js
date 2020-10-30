@@ -12,7 +12,7 @@ const ShowTodo = () => {
   if (loading)
     return (
       <div>
-        <h5>Please wait while we load the Todos.</h5>
+        <h5>Please wait while we load the scheduled tasks.</h5>
         <Loader type="Rings" color="#20b2aa" height={100} width={100} />
       </div>
     );
@@ -30,9 +30,9 @@ const ShowTodo = () => {
     toggleTodo({ variables })
       .then((res) => {
         console.log("Todo updated, ", res);
-        
-        // Refresh the page after Todo item is deleted 
-        window.location.reload(false)
+
+        // Refresh the page after Todo item is deleted
+        window.location.reload(false);
       })
       .catch((error) => {
         console.log("Error in Toggle function, ", error);
@@ -41,47 +41,52 @@ const ShowTodo = () => {
 
   const DisplayTodo = () => {
     if (data.Todo.length === 0) {
-      return <h1 className='text-center'>
-        No Todo item added yet.
-      </h1>;
+      return <h1 className="text-center">No Tasks scheduled yet.</h1>;
     } else {
-      return data.Todo.map((todo) => (
-        <div
-          className="todo"
-          key={todo.id}
-          style={{ cursor: "pointer" }}
-        >
-          <Container>
-            <Row>
-            <Col sm={4} xl={1} className='close1'>
-                <i
-                  aria-hidden="true"
-                  class="close link icon"
-                  onClick={() => handleToggleTodo(todo)}
-                />
-              </Col>
-              <Col sm={8} xl={11} className='desc'>
-                <strong>Title: </strong>
-                {todo.Title}
-                <br />
-                <strong>Description: </strong>
-                {todo.Description}
-                <br />
-                <strong>Date added: </strong>
-                {todo.date}
-                <br />
-              </Col>
-              <Col sm={4} xl={1} className='close2'>
-                <i
-                  aria-hidden="true"
-                  class="close link icon"
-                  onClick={() => handleToggleTodo(todo)}
-                />
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      ));
+      return data.Todo.map((todo) => {
+        const startDate = todo.StartTime.substring(0, 10);
+        const starttime = todo.StartTime.substring(12, 19);
+        const endDate = todo.EndTime.substring(0, 10);
+        const endtime = todo.EndTime.substring(12, 19);
+        var start = `${starttime}, ${startDate}`;
+        var end = `${endtime}, ${endDate}`;
+
+        return (
+          <div className="todo" key={todo.id}>
+            <Container>
+              <Row>
+                <Col sm={4} xl={1} className="close1">
+                  <i
+                    aria-hidden="true"
+                    className="close link icon"
+                    onClick={() => handleToggleTodo(todo)}
+                  />
+                </Col>
+                <Col sm={8} xl={11} className="desc">
+                  <strong>Title: </strong>
+                  {todo.Title}
+                  <br />
+                  <strong>Description: </strong>
+                  {todo.Description}
+                  <br />
+                  {/* <strong>Scheduled Time: </strong> */}
+                  <span className='time'>
+                  {start} to {end}
+                  </span>
+                  <br />
+                </Col>
+                <Col sm={4} xl={1} className="close2">
+                  <i
+                    aria-hidden="true"
+                    class="close link icon"
+                    onClick={() => handleToggleTodo(todo)}
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        );
+      });
     }
   };
 

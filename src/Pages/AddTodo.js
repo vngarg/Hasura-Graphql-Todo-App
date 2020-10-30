@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "../components/Menu";
 import { ADD_TODOS } from "../graphql/mutations";
 import { GET_TODOS } from "../graphql/queries";
 import { useMutation } from "@apollo/react-hooks";
 import ShowTodo from "./ShowTodo";
 import { Container } from "reactstrap";
+import DateTimePicker from "react-datetime-picker";
 
 import "./style.css";
 import Footer from "../components/Footer/Footr";
@@ -12,6 +13,8 @@ import Footer from "../components/Footer/Footr";
 const AddTodo = () => {
   const [addTodo] = useMutation(ADD_TODOS);
 
+  const [startTime, onChange] = useState(new Date());
+  const [endTime, changeEndTime] = useState(new Date());
   const [description, setDescription] = React.useState("");
   const [title, setTitle] = React.useState("");
 
@@ -22,6 +25,8 @@ const AddTodo = () => {
     var variables = {
       Title: title,
       Description: description,
+      StartTime: startTime,
+      EndTime: endTime,
     };
 
     addTodo({
@@ -59,6 +64,30 @@ const AddTodo = () => {
           />
           <br />
           <br />
+          <label>Start Time: &ensp;</label> 
+          <DateTimePicker 
+          onChange={onChange} 
+          value={startTime} 
+          format='dd-MM-y h:mm:ss a'
+          yearPlaceholder='yy'
+          monthPlaceholder='mm'
+          dayPlaceholder='dd'
+          hourPlaceholder='hr'
+          minutePlaceholder='min'
+          secondPlaceholder='ss'
+          /><br /><br />
+          <label>End Time: &ensp;</label> 
+          <DateTimePicker 
+          onChange={changeEndTime} 
+          value={endTime} 
+          format='dd-MM-y h:mm:ss a'
+          yearPlaceholder='yy'
+          monthPlaceholder='mm'
+          dayPlaceholder='dd'
+          hourPlaceholder='hr'
+          minutePlaceholder='min'
+          secondPlaceholder='ss'
+          /><br /><br />
           <button type="submit" className="btn">
             Create a Todo
           </button>
